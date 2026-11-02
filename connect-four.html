@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#0b1020">
+
+    <title>SoftwareKingdom | Connect Four</title>
+
+    <link rel="stylesheet"
+          href="css/connect-four.css">
+
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <header class="header">
+
+            <div class="logo">SOFTWAREKINGDOM</div>
+
+            <h1>CONNECT FOUR</h1>
+
+            <p>Connect Four To Win!</p>
+
+        </header>
+
+        <!-- GAME MODE -->
+
+        <section class="mode-section">
+
+            <h2>Select Game Mode</h2>
+
+            <div class="mode-buttons">
+
+                <button id="computerMode"
+                        class="mode-btn active">
+                    Player vs Computer
+                </button>
+
+                <button id="twoPlayerMode"
+                        class="mode-btn">
+                    Two Players
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- SCOREBOARD -->
+
+        <section class="score-section">
+
+            <div class="score-card">
+
+                <span id="playerOneLabel">PLAYER 1</span>
+
+                <strong id="scoreOne">0</strong>
+
+            </div>
+
+            <div class="score-card">
+
+                <span>DRAWS</span>
+
+                <strong id="drawScore">0</strong>
+
+            </div>
+
+            <div class="score-card">
+
+                <span id="playerTwoLabel">COMPUTER</span>
+
+                <strong id="scoreTwo">0</strong>
+
+            </div>
+
+        </section>
+
+        <!-- GAME AREA -->
+
+        <section class="game-section">
+
+            <div id="turnIndicator"
+                 class="turn-indicator">
+                PLAYER 1'S TURN
+            </div>
+
+            <div class="board-wrapper">
+
+                <div id="gameBoard"
+                     class="game-board">
+
+                </div>
+
+            </div>
+
+            <div id="gameMessage"
+                 class="game-message">
+                Select a column to drop your disc!
+            </div>
+
+            <!-- CONTROLS -->
+
+            <div class="game-controls">
+
+                <button id="restartBtn"
+                        class="primary-btn">
+                    Restart Game
+                </button>
+
+                <button id="resetScoreBtn"
+                        class="secondary-btn">
+                    Reset Scores
+                </button>
+
+                <button id="musicBtn"
+                        class="secondary-btn">
+                    🎵 Music OFF
+                </button>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            <p>© 2026 SOFTWAREKINGDOM</p>
+
+            <p>Think • Play • Win</p>
+
+        </footer>
+
+    </main>
+
+    <script src="js/music.js"></script>
+
+    <script src="js/connect-four.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#111827">
+
+    <title>SoftwareKingdom | 2048 Game</title>
+
+    <link rel="stylesheet"
+          href="css/2048.css">
+
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <header class="header">
+
+            <div class="logo">SOFTWAREKINGDOM</div>
+
+            <h1>2048</h1>
+
+            <p>Join The Numbers And Reach 2048!</p>
+
+        </header>
+
+        <!-- SCOREBOARD -->
+
+        <section class="score-section">
+
+            <div class="score-card">
+
+                <span>SCORE</span>
+
+                <strong id="score">0</strong>
+
+            </div>
+
+            <div class="score-card">
+
+                <span>BEST</span>
+
+                <strong id="bestScore">0</strong>
+
+            </div>
+
+        </section>
+
+        <!-- GAME INSTRUCTIONS -->
+
+        <section class="instructions">
+
+            <p>
+                Combine matching numbers to reach
+                <strong>2048!</strong>
+            </p>
+
+        </section>
+
+        <!-- GAME BOARD -->
+
+        <section class="game-section">
+
+            <div id="gameBoard"
+                 class="game-board"
+                 aria-label="2048 game board">
+
+            </div>
+
+            <div id="gameMessage"
+                 class="game-message"
+                 aria-live="polite">
+                Good Luck! Start Playing.
+            </div>
+
+        </section>
+
+        <!-- GAME CONTROLS -->
+
+        <section class="game-controls">
+
+            <button id="newGameBtn"
+                    class="primary-btn">
+                🔄 New Game
+            </button>
+
+            <button id="undoBtn"
+                    class="secondary-btn">
+                ↩ Undo
+            </button>
+
+            <button id="musicBtn"
+                    class="secondary-btn">
+                🎵 Music OFF
+            </button>
+
+        </section>
+
+        <!-- MOBILE CONTROLS -->
+
+        <section class="mobile-controls">
+
+            <button class="move-btn"
+                    data-direction="up">
+                ▲
+            </button>
+
+            <div class="horizontal-controls">
+
+                <button class="move-btn"
+                        data-direction="left">
+                    ◀
+                </button>
+
+                <button class="move-btn"
+                        data-direction="down">
+                    ▼
+                </button>
+
+                <button class="move-btn"
+                        data-direction="right">
+                    ▶
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- INSTRUCTIONS -->
+
+        <section class="help-section">
+
+            <h2>How To Play</h2>
+
+            <p>
+                Use your arrow keys, swipe or mobile
+                controls to move the tiles.
+            </p>
+
+            <p>
+                When two tiles with the same number
+                touch, they merge into one!
+            </p>
+
+        </section>
+
+        <footer>
+
+            <p>© 2026 SOFTWAREKINGDOM</p>
+
+            <p>Think • Merge • Win</p>
+
+        </footer>
+
+    </main>
+
+    <script src="js/music.js"></script>
+
+    <script src="js/2048.js"></script>
+
+</body>
+
+</html>

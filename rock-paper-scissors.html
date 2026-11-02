@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#0b1020">
+
+    <title>SoftwareKingdom | Rock Paper Scissors</title>
+
+    <link rel="stylesheet"
+          href="css/rock-paper-scissors.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <header class="header">
+
+            <div class="logo">SOFTWAREKINGDOM</div>
+
+            <h1>ROCK PAPER SCISSORS</h1>
+
+            <p>Choose Your Move!</p>
+
+        </header>
+<section class="mode-section">
+
+    <h2>Select Game Mode</h2>
+
+    <div class="mode-buttons">
+
+        <button id="computerMode" class="mode-btn active">
+            Player vs Computer
+        </button>
+
+        <button id="twoPlayerMode" class="mode-btn">
+            Two Players
+        </button>
+
+    </div>
+
+</section>
+        <section class="score-section">
+
+            <div class="score-card">
+                <span>YOU</span>
+                <strong id="playerScore">0</strong>
+            </div>
+
+            <div class="score-card">
+                <span>DRAWS</span>
+                <strong id="drawScore">0</strong>
+            </div>
+
+            <div class="score-card">
+                <span id="opponentLabel">COMPUTER</span>
+                <strong id="computerScore">0</strong>
+            </div>
+
+        </section>
+
+        <section class="game-section">
+
+            <h2>Make Your Choice</h2>
+
+            <div class="choices">
+
+                <button class="choice-btn"
+                        data-choice="rock">
+                    ✊
+                    <span>ROCK</span>
+                </button>
+
+                <button class="choice-btn"
+                        data-choice="paper">
+                    ✋
+                    <span>PAPER</span>
+                </button>
+
+                <button class="choice-btn"
+                        data-choice="scissors">
+                    ✌️
+                    <span>SCISSORS</span>
+                </button>
+
+            </div>
+
+            <div class="battle-area">
+
+                <div class="player-choice">
+                    <span>YOU</span>
+                    <strong id="playerChoice">❔</strong>
+                </div>
+
+                <div class="vs">VS</div>
+
+                <div class="computer-choice">
+                    <span id="opponentName">COMPUTER</span>
+                    <strong id="computerChoice">❔</strong>
+                </div>
+
+            </div>
+
+            <div id="result" class="result">
+                Select your move to start!
+            </div>
+
+            <button id="restartBtn" class="restart-btn">
+                Restart Game
+            </button>
+
+            <button id="musicBtn" class="music-btn">
+                🎵 Music OFF
+            </button>
+
+        </section>
+
+        <footer>
+            <p>© 2026 SOFTWAREKINGDOM</p>
+            <p>Think • Play • Win</p>
+        </footer>
+
+    </main>
+
+    <script src="js/music.js"></script>
+    <script src="js/rock-paper-scissors.js"></script>
+
+</body>
+
+</html>

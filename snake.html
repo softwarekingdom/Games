@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#071510">
+
+    <title>SoftwareKingdom | Snake Game</title>
+
+    <link rel="stylesheet" href="css/snake.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <header class="header">
+
+            <div class="logo">SOFTWAREKINGDOM</div>
+
+            <h1>SNAKE GAME</h1>
+
+            <p>Eat • Grow • Survive</p>
+
+        </header>
+
+        <!-- SCOREBOARD -->
+
+        <section class="score-section">
+
+            <div class="score-card">
+                <span>SCORE</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <div class="score-card">
+                <span>BEST SCORE</span>
+                <strong id="bestScore">0</strong>
+            </div>
+
+            <div class="score-card">
+                <span>LEVEL</span>
+                <strong id="level">1</strong>
+            </div>
+
+        </section>
+
+        <!-- GAME STATUS -->
+
+        <div id="gameStatus" class="game-status">
+            PRESS START TO PLAY
+        </div>
+
+        <!-- GAME BOARD -->
+
+        <section class="board-wrapper">
+
+            <canvas id="gameCanvas"
+                    width="400"
+                    height="400">
+            </canvas>
+
+            <div id="gameOverlay" class="game-overlay">
+
+                <h2 id="overlayTitle">SNAKE GAME</h2>
+
+                <p id="overlayMessage">
+                    Collect food and grow your snake!
+                </p>
+
+                <button id="overlayStartBtn">
+                    START GAME
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- GAME CONTROLS -->
+
+        <section class="game-controls">
+
+            <button id="startBtn" class="primary-btn">
+                ▶ Start
+            </button>
+
+            <button id="pauseBtn" class="secondary-btn">
+                ⏸ Pause
+            </button>
+
+            <button id="restartBtn" class="secondary-btn">
+                🔄 Restart
+            </button>
+
+            <button id="musicBtn" class="secondary-btn">
+                🎵 Music OFF
+            </button>
+
+        </section>
+
+        <!-- MOBILE CONTROLS -->
+
+        <section class="mobile-controls">
+
+            <button class="direction-btn"
+                    data-direction="up">
+                ▲
+            </button>
+
+            <div class="horizontal-controls">
+
+                <button class="direction-btn"
+                        data-direction="left">
+                    ◀
+                </button>
+
+                <button class="direction-btn"
+                        data-direction="down">
+                    ▼
+                </button>
+
+                <button class="direction-btn"
+                        data-direction="right">
+                    ▶
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- INSTRUCTIONS -->
+
+        <section class="help-section">
+
+            <h2>HOW TO PLAY</h2>
+
+            <p>• Use arrow keys to control the snake.</p>
+
+            <p>• Collect food to increase your score.</p>
+
+            <p>• Avoid walls and your own body.</p>
+
+            <p>• Your speed increases as your score grows.</p>
+
+        </section>
+
+        <footer>
+
+            <p>© 2026 SOFTWAREKINGDOM</p>
+
+            <p>Think • Play • Survive</p>
+
+        </footer>
+
+    </main>
+
+    <script src="js/music.js"></script>
+    <script src="js/snake.js"></script>
+
+</body>
+
+</html>

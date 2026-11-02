@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#070b18">
+    <title>NEON BRICK BREAKER | SOFTWAREKINGDOM</title>
+    <link rel="stylesheet" href="css/brick-breaker.css">
+</head>
+<body>
+
+    <main class="game-container">
+
+        <header class="game-header">
+            <div class="brand">
+                <span class="brand-icon">◆</span>
+                <div>
+                    <h1>NEON <span>BRICK BREAKER</span></h1>
+                    <p>SOFTWAREKINGDOM ARCADE</p>
+                </div>
+            </div>
+            <div class="header-tag">ARCADE MODE</div>
+        </header>
+
+        <section class="score-panel">
+            <div class="score-card">
+                <span>SCORE</span>
+                <strong id="score">0</strong>
+            </div>
+            <div class="score-card">
+                <span>BEST</span>
+                <strong id="bestScore">0</strong>
+            </div>
+            <div class="score-card">
+                <span>LEVEL</span>
+                <strong id="level">1</strong>
+            </div>
+            <div class="score-card">
+                <span>LIVES</span>
+                <strong id="lives">3</strong>
+            </div>
+        </section>
+
+        <section class="game-section">
+
+            <div class="game-topline">
+                <span>◈ NEON ARENA</span>
+                <span id="gameStatus">READY</span>
+            </div>
+
+            <div class="canvas-wrapper">
+                <canvas id="gameCanvas" width="900" height="600">
+                    Your browser does not support Canvas.
+                </canvas>
+
+                <div class="game-overlay" id="gameOverlay">
+                    <div class="overlay-content">
+                        <div class="overlay-icon" id="overlayIcon">◆</div>
+                        <h2 id="overlayTitle">NEON BRICK BREAKER</h2>
+                        <p id="overlayMessage">
+                            Break the bricks. Collect power-ups. Beat every level.
+                        </p>
+                        <button id="overlayStartBtn">START GAME</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-controls">
+                <button id="startBtn" class="control-btn primary">▶ START</button>
+                <button id="pauseBtn" class="control-btn">Ⅱ PAUSE</button>
+                <button id="restartBtn" class="control-btn">↻ RESTART</button>
+                <button id="musicBtn" class="control-btn">♫ MUSIC OFF</button>
+            </div>
+
+            <div class="mobile-controls">
+                <button id="leftBtn" aria-label="Move left">◀</button>
+                <span>MOVE PADDLE</span>
+                <button id="rightBtn" aria-label="Move right">▶</button>
+            </div>
+
+        </section>
+
+        <section class="instructions">
+            <h3>HOW TO PLAY</h3>
+            <div class="instruction-grid">
+                <p>⌨️ <b>Keyboard:</b> Arrow keys / A and D</p>
+                <p>👆 <b>Mobile:</b> Drag or use controls</p>
+                <p>⚡ <b>Power-ups:</b> Catch falling items</p>
+                <p>🎯 <b>Goal:</b> Destroy all bricks</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 SOFTWAREKINGDOM · NEON ARCADE COLLECTION</p>
+        </footer>
+
+    </main>
+
+    <script src="js/music.js"></script>
+    <script src="js/brick-breaker.js"></script>
+</body>
+</html>

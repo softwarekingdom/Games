@@ -1,0 +1,264 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0b1020;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 25px;
+}
+
+.logo {
+    color: #00d9ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.header h1 {
+    font-size: 30px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+}
+
+.header p {
+    color: #929bb5;
+    margin-top: 8px;
+}
+
+/* GAME MODE */
+
+.mode-section {
+    margin-bottom: 22px;
+}
+
+.mode-section h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.mode-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.mode-btn {
+    flex: 1;
+    padding: 13px 7px;
+    border: 1px solid #293654;
+    border-radius: 10px;
+    background: #151e34;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.mode-btn.active {
+    background: #073b56;
+    color: #00d9ff;
+    border-color: #00d9ff;
+}
+
+/* SCOREBOARD */
+
+.score-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.score-card {
+    padding: 15px 5px;
+    background: #151e34;
+    border: 1px solid #293654;
+    border-radius: 12px;
+}
+
+.score-card span {
+    display: block;
+    color: #9aa6c2;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.score-card strong {
+    font-size: 27px;
+    color: #00d9ff;
+}
+
+/* GAME AREA */
+
+.game-section {
+    padding: 22px 15px;
+    background: #111a2e;
+    border: 1px solid #263653;
+    border-radius: 20px;
+}
+
+.game-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.choices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.choice-btn {
+    min-height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: #1b2942;
+    border: 1px solid #344766;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 38px;
+    transition: 0.2s;
+}
+
+.choice-btn span {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #aebbd5;
+}
+
+.choice-btn:active {
+    transform: scale(0.93);
+    border-color: #00d9ff;
+}
+
+/* BATTLE AREA */
+
+.battle-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 0 20px;
+    padding: 18px 5px;
+    background: #17233a;
+    border-radius: 15px;
+}
+
+.player-choice,
+.computer-choice {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.player-choice span,
+.computer-choice span {
+    color: #9aa6c2;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.player-choice strong,
+.computer-choice strong {
+    font-size: 45px;
+}
+
+.vs {
+    color: #00d9ff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* RESULT */
+
+.result {
+    min-height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #17233a;
+    border-radius: 12px;
+    color: #00d9ff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* BUTTONS */
+
+.restart-btn,
+.music-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.restart-btn {
+    background: #00c8f0;
+    color: #061321;
+}
+
+.music-btn {
+    background: #25334e;
+    color: #ffffff;
+}
+
+footer {
+    margin-top: 25px;
+    color: #6f7c99;
+    font-size: 11px;
+    line-height: 2;
+}
+
+/* MOBILE */
+
+@media (max-width: 380px) {
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .game-section {
+        padding: 16px 10px;
+    }
+
+    .choice-btn {
+        min-height: 90px;
+        font-size: 32px;
+    }
+
+    .player-choice strong,
+    .computer-choice strong {
+        font-size: 38px;
+    }
+}
